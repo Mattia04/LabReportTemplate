@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{style} % Add style.sty to the document
+
+\begin{document}
+\thispagestyle{empty} % Remove first page numbering
+\vfill
+\begin{figure}
+    \centering
+    \includegraphics[height = 30mm]{Images/unimi.png}\\
+\end{figure}
+
+\mytitle{Questo è un Big titolo}{Questo è un piccolo sottotitolo}{Nome Cognome}{\today}
+
+{
+\centering
+\parbox{1.00\textwidth} % Change to decrease TOC width
+{
+  \hypersetup{linkcolor=black} % Make TOC black
+  \tableofcontents
+}\par}
+
+\input{Chapters/Abstract}
+
+\newpage
+\twocolumn % Remove if you want 1 column
+
+\input{Chapters/Introduction}
+
+\input{Chapters/Theoretical Model}
+
+\input{Chapters/Instruments}
+
+\input{Chapters/Measures}
+
+\input{Chapters/Statisticahl Analysis}
+
+\input{Chapters/Conclusions}
+
+\onecolumn % Remove if you want 1 column
+
+\end{document}

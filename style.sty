@@ -1,0 +1,169 @@
+% Utility libs
+\usepackage[a4paper]{geometry} % [, total={<width>in, <height>in}] to change margin sizes
+\usepackage{graphicx}
+%\usepackage[italian]{babel} % Change language to what you prefer
+\usepackage{hyperref}
+\usepackage{svg}
+
+% Math
+\usepackage{amsmath} % ?
+\usepackage{amssymb} % ?
+\usepackage{mathtools} % ?
+\usepackage{physics} % ?
+
+% Fancy libs
+\usepackage{xcolor} % ?
+\usepackage{lipsum} % ?
+%\usepackage[]{thmbox} %Th box
+%\usepackage{marginnote}
+\usepackage{tikz} % ?
+\usepackage{sectsty} % ?
+\usepackage[titles]{tocloft} % ?
+\setlength{\cftbeforesecskip}{1ex} % ?
+\usepackage{nameref} % References with names instead of number
+\usepackage{multirow} % Multiple rows
+\usepackage{datetime} % Fancyer \today
+
+% TODO search for the unimi fonts
+%Adobe Garamond Regular (è il font predefinito di unimi, ma non so come metterlo)
+
+
+% Utility commands
+%Command reference to a figure
+\newcommand{\figref}[1]{\hyperref[#1]{Figure~\ref*{#1}}}
+%Command reference to a Table
+\newcommand{\tabref}[1]{\hyperref[#1]{Table~\ref*{#1}}}
+
+%Remove indentation
+\setlength{\parindent}{0pt}
+
+\renewcommand*{\thefootnote}{[\arabic{footnote}]}% * perchè sta cosa è qui?
+
+% Define Without Loss Of Generality
+\newcommand{\WLOG}{W.L.O.G.\ }
+
+%define personalized commands
+%\reversemarginpar % set margin to left
+%\newcommand{\Def}{\marginnote{\raggedleft Def.}}
+%\newcommand{\Dim}{\marginnote{\raggedleft Dim.}}
+%\newcommand{\oss}{\marginnote{\raggedleft Oss.}}
+%\newcommand{\es}{\marginnote{\raggedleft Es.}}
+%\newcommand{\ex}{\marginnote{\raggedleft Ex.}}
+%\newcommand{\prop}{\marginnote{\raggedleft Prop.}}
+%\newcommand{\nb}{\marginnote{\raggedleft N.B.}}
+
+%Define math sets
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\Q}{\mathbb{Q}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\C}{\mathbb{C}}
+
+
+% xolors
+% define colors % TODO define more colors (unimi style)
+\definecolor{blu_statale}{RGB}{0, 51, 102}
+\definecolor{blu_statale1}{RGB}{0, 51, 102}% todo change this
+\definecolor{blu_statale2}{RGB}{0, 51, 102}% todo change this
+
+%change section color
+\sectionfont{\color{blu_statale}}
+\subsectionfont{\color{blu_statale1}}
+\subsubsectionfont{\color{blu_statale2}}
+
+
+% hyperref
+% * I could change this but I don't know how
+\hypersetup{
+    colorlinks,
+    linkcolor={blu_statale},
+    citecolor={blu_statale},
+    urlcolor={blu_statale}
+}
+
+
+% multirow
+% Column separation
+\setlength{\columnsep}{1cm}
+\setlength{\columnseprule}{0.4pt}
+
+% thmbox
+% Change style of theorems
+\thmboxoptions{style=S}
+\thmboxoptions{titlestyle=\textit{\ #1}}
+\thmboxoptions{bodystyle=\noindent}
+
+% Rewrite command to be shorter
+\newtheorem{thm}{Theorem}
+
+% Add corollary
+\newenvironment{cor}[1][\unskip]{
+  \thmbox[S]{\textbf{Corollary} \textbf{\textit{#1}}}
+}
+{\endthmbox\vspace*{.75ex}}
+
+% Add lemma [italian]
+%\newenvironment{lem}[1][\unskip]{
+%  \thmbox[S]{\textbf{Lemma} \textbf{\textit{#1}}}
+%}
+%{\endthmbox\vspace*{.75ex}}
+
+
+\newcommand{\tc}{\text{ t.c. }}
+
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.25} % Default value: 1
+
+%make equalsign with text under it
+\newcommand{\eqtext}[1]{\underset{\text{\normalfont\tiny\sffamily #1}}{=}}
+
+%make equal sign with def over it
+\newcommand*{\defeq}{\stackrel{\text{def}}{=}}
+
+%o piccolo
+\newcommand{\smallo}{\ensuremath{\scalebox{0.6}{$\mathcal{O}$}}}
+
+%titolo
+\newcommand{\mytitle}[4]{%
+    \begin{center}
+        \textcolor{blu_statale}{\Huge\textbf{#1} \\[0.5cm]}
+        \large #2 \\[0.15cm]
+        \normalsize #3 \\[0.15cm]
+        \normalsize #4 \\
+    \end{center}
+}
+
+%underline vector
+\newcommand{\ul}[1]{\boldsymbol{#1}}
+
+
+% Define the \gnorm command
+\newcommand{\gnorm}{\norm{\cdot}}
+
+% Define the \xnorm command
+\newcommand{\xnorm}[2][\cdot]{\norm{\underbar{$#2$}}_{#1}}
+
+%Define the fancy derivate
+\newcommand{\D}{\mathcal{D}}
+
+%define common vectors
+\newcommand{\Vx}{\ul{x}}
+\newcommand{\Vy}{\ul{y}}
+\newcommand{\Vv}{\ul{v}}
+\newcommand{\Va}{\ul{a}}
+\newcommand{\Vb}{\ul{b}}
+\newcommand{\Vc}{\ul{c}}
+\newcommand{\Vf}{\ul{f}}
+\newcommand{\Vg}{\ul{g}}
+\newcommand{\Vh}{\ul{h}}
+\newcommand{\Vk}{\ul{k}}
+\newcommand{\VL}{\ul{L}}
+\newcommand{\Vell}{\ul{\ell}}
+\newcommand{\Vlambda}{\ul{\lambda}}
+\newcommand{\Veps}{\ul{\varepsilon}}
+\newcommand{\Veta}{\ul{\eta}}
+\newcommand{\Vphi}{\ul{\phi}}
+\newcommand{\basecan}{\ul{e}_j}
+
+%define jacobian
+\newcommand{\J}{\mathbf{J}}

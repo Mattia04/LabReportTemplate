@@ -1,0 +1,76 @@
+\section{Misure Effettuate}\label{misure effettuate}
+Tutte le misure effettuate si trovano nella cartella \verb|data\| su una  \href{https://github.com/Mattia04/Accelerazione-gravitazionale/tree/main}{Repository:Accelerazione-gravitazionale} su GitHub.\\
+
+Prima di effettuare le misure abbiamo pesato le masse tramite una bilancia, le masse sono riportate in \tabref{tab:masse usate}, e saranno le stesse per tutte le misure. 
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{r|l}
+        \textbf{Oggetto} & \textbf{Massa [g]} \\
+        \hline gancio & 19,88$\pm 0,01$\\
+        masse & 79,56$\pm 0,01$\\
+        massa totale & 99,44$\pm 0,02$
+    \end{tabular}
+    \caption{Masse utilizzate}
+    \label{tab:masse usate}
+\end{table}
+
+Partendo dalla configurazione descritta nella sezione precedente (\nameref{montaggio}) abbiamo misurato la lunghezza totale del filo: $\ell_\text{m} = 405\pm 1$mm con il metro (risoluzione 1mm); e con il calibro  la distanza delle masse da un riferimento fisso $\ell_\text{rif} = 206,10\pm0,02$mm, il banco di lavoro, così da poter ottenere una precisione maggiore utilizzando poi una regressione lineare sulle lunghezze del calibro, mentre la lunghezza totale con il metro ci servirà per fare un controllo sul parametro dell'intercetta della regressione.\\
+
+Successivamente abbiamo portato il pendolo a circa 3° dalla verticale e l'abbiamo lasciato libero di oscillare.\\
+Prima di effettuare le misure abbiamo lasciato trascorrere circa 5 periodi, così da ridurre le oscillazioni ``spurie".\\
+Passati i primi 5 periodi abbiamo preso le misure con il cronometro (risoluzione: 0.01s) e il fototraguardo contemporaneamente\footnote{Inizialmente non abbiamo eseguito le misure con il cronometro e con il fototraguardo contemporaneamente quindi abbiamo meno set di misura con il fototraguardo rispetto ai set con il cronometro}. \\
+
+Raccolti i dati del primo sperimentatore, abbiamo misurato la lunghezza del pendolo dal riferimento, e abbiamo ripetuto la stessa procedura per gli altri due sperimentatori con lo stessa configurazione.\\
+
+\subsubsection*{Osservazioni sul cronometro} 
+Per il cronometro abbiamo preso i periodi rispetto a un riferimento comune agli sperimentatori, ovvero quando il gancio del pendolo attraversava (in una direzione a scelta) il piano generato dall'asta verticale e dall'asta di supporto del fototraguardo.
+\subsubsection*{Osservazioni sul fototraguardo}
+Per il fototraguardo, l'abbiamo posizionarlo in modo che sia perpendicolare al piano di oscillazione, inoltre abbiamo posizionato il fascio di fotoni emessi, in modo tale che intercettasse l'asta del gancio, e non le masse utilizzate; questo perché l'astina ha un diametro molto inferiore alle masse e ciò ci permette di osservare oscillazioni con angoli più piccoli.
+
+\subsection*{Configurazioni successive}
+Per passare alla configurazione successiva di lunghezza, abbiamo aggiunto al centro del filo una sezione circolare di filo, per allungare di circa 3cm il pendolo, e abbiamo spostato le masse all'estremo di questo pezzo di filo aggiunto; come ultima cosa abbiamo abbassato il fototraguardo per mantenerlo nel range di funzionamento.\\
+
+A questo punto abbiamo eseguito nuovamente la procedura descritta in precedenza: abbiamo misurato la lunghezza del pendolo, lasciato passare 5 periodi, effettuato le misure con fototraguardo e cronometro, controllato la lunghezza del filo, e ripetuto per gli altri 2 sperimentatori. \\
+
+Abbiamo ripetuto tutta la procedura per le lunghezze del filo riportate in \tabref{tab:lunghezze usate}, tale tabella contiene le misure effettuate con il calibro della distanza dal punto più basso delle masse al riferimento fisso.\\
+\begin{table}[h]
+    \centering
+    \begin{tabular}{r|c|c|c|c}
+        \textbf{idx} & \textbf{Prima} & \textbf{exp. 1} & \textbf{exp. 2} & \textbf{exp. 3} \\
+        \hline
+        1 & 206,10 & 206,10 & 206,10 & 206,10\\
+        2 & 172,58 & 172,58 & 172,58 & 172,58\\
+        3 & ** & 128,24 & 127,06 & 127,46\\
+        4 & 99,26 & 99,22 & 99,08 & 99,06 \\
+        5 & 68,00 & 67,90 & 67,86 & 67,56\\
+        6 & 31,00 & 30,00 & 29,60* & 29,20*\\
+    \end{tabular}
+    \caption{Lunghezze delle varie configurazioni, dal riferimento fisso. Ogni riga contiene (in ordine) le lunghezze prima del set di misure, dopo che lo sperimentatore (exp) 1 ha eseguito le misure, dopo l'exp 2 e dopo l'exp 3; tutte le misure sono in mm e hanno incertezza pari a $\pm0.02$mm. \\
+    * Sono state effettuate prima quelle dell'epx. 3 e poi quelle dell'exp. 2.\\
+    ** Il valore è mancante.}
+    \label{tab:lunghezze usate}
+\end{table}
+
+Per l'ultimo set di misure, ovvero la sesta riga della tabella, non abbiamo effettuato misure con il fototraguardo.\\
+
+\subsection{Angoli diversi}\label{misure angoli diversi}
+Per stimare l'attrito viscoso abbiamo effettuato più misure mantenendo la stessa lunghezza del filo, ma utilizzando angoli di rilascio del pendolo differenti, in \tabref{tab:lunghezze usate angoli diversi}, sono riportate riportate le lunghezze, prima e dopo ogni oscillazione partendo dagli angoli indicati.\\
+\begin{table}[h]
+    \centering
+    \begin{tabular}{r|c|c|c|c|c}
+        \textbf{prima} & \textbf{3°} & \textbf{5°} & \textbf{7°} & \textbf{10°} & \textbf{15°}\\
+        \hline
+        31,00 & * & 30,56 & 30,56 & 30,00 & 30,00\\
+    \end{tabular}
+    \caption{Lunghezze delle varie configurazioni per angoli diversi; tutte le misure sono in mm e hanno incertezza pari a $\pm0.02$mm.\\
+    * Il valore è mancante.}
+    \label{tab:lunghezze usate angoli diversi}
+\end{table}
+
+Come ultima cosa abbiamo misurato nuovamente la lunghezza del filo, nella prima configurazione per osservare se il filo si fosse allungato durante l'esperimento. La lunghezza del filo misurata è di 205,72mm, quindi il filo si è allungato durante l'esperimento (da 206,10mm), perciò il filo non è perfettamente inestensibile.\\
+
+\subsubsection*{Nota sugli allungamenti}
+Durante l'esperimento, oltre all'allungamento dall'inizio alla fine dell'esperimento, abbiamo osservato anche allungamenti maggiori e addirittura delle contrazioni (lunghezze: righe 3 e 6, nelle colonne exp. $2\to \text{exp. }3$ nella tabella \tabref{tab:lunghezze usate}).\\
+Non sappiamo giustificare a cosa siano dovuti questi allungamenti e accorciamenti del filo.\\
+Tuttavia escludiamo che siano dovuti ad uno spostamento lungo l'asse $x$, quindi che le masse non fossero nella posizione centrale ma leggermente spostate (verso destra o sinistra osservando dal fronte, \figref{fig:strumentazione 2}), perché facendo la costruzione geometrica del sistema, rappresentata schematicamente su \href{https://www.desmos.com/calculator/hlyr1xp9xh}{Desmos}, se consideriamo uno spostamento orizzontale di 1.5cm dalla posizione di minimo (quindi uno spostamento visibile ad occhio nudo) osserveremmo una differenza di lunghezza pari a 0,03cm, che non è sufficiente a giustificare le differenze di lunghezza del pendolo, che arrivano fino a 0.18cm.\\
